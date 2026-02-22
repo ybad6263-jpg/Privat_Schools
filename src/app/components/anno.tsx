@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
 // src/components/SuccessStats.tsx
 export default function anno() {
- const [news, setNews] = useState([]);
+ const [news, setNews] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function anno() {
         .order('created_at', { ascending: false });
 
       if (error) console.log("Error fetching:", error);
-      else setNews(data);
+      else setNews(data || []);
       setLoading(false);
     }
 
