@@ -16,7 +16,7 @@ export default function conatct()
   setIsSending(true);
 
   try {
-    const response = await fetch("/API/contact", {
+    const response = await fetch("/api/contact", {
       method: "POST", // The Private way!
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData), // Turn our object into a string for the trip

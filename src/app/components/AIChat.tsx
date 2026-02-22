@@ -15,7 +15,7 @@ export default function AIChat() {
     setInput("");
 
     // Call our AI API
-    const res = await fetch("/API/chat", {
+    const res = await fetch("/api/chat", {
       method: "POST",
       body: JSON.stringify({ prompt: input, history: messages })
     });
