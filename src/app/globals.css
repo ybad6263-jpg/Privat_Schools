@@ -1,0 +1,15 @@
+@import 'tailwindcss' ;
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: sans-serif; /* Your "Tech" font */
+}
+
+html {
+  scroll-behavior: smooth;
+}
