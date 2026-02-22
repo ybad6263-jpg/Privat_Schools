@@ -15,7 +15,7 @@ export default function anno() {
         .order('created_at', { ascending: false });
 
       if (error) console.log("Error fetching:", error);
-      else setNews(data || []);
+      else setNews(data as any);
       setLoading(false);
     }
 
