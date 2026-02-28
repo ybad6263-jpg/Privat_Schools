@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function AIChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState("");
-  const [messages, setMessages] = useState([{ role: "ai", content: "Hello! I'm the Elite Academy Assistant. How can I help you today?" }]);
+  const [messages, setMessages] = useState([{ role: "ai", content: "Hello! I'm the Hteik Tan Private School Assistant. How can I help you today?" }]);
 
   const sendMessage = async () => {
     if (!input) return;
@@ -29,7 +29,7 @@ export default function AIChat() {
     <div className="fixed bottom-6 right-6 z-50">
       {isOpen ? (
         <div className="bg-white w-80 h-96 shadow-2xl rounded-3xl flex flex-col border border-slate-100 overflow-hidden">
-          <div className="bg-emerald-600 p-4 text-white font-bold flex justify-between">
+          <div className="bg-sky-600 p-4 text-white font-bold flex justify-between">
             <span>School Assistant</span>
             <button onClick={() => setIsOpen(false)}>✕</button>
           </div>
@@ -56,9 +56,8 @@ export default function AIChat() {
       ) : (
         <button 
           onClick={() => setIsOpen(true)}
-          className="w-14 h-14 bg-emerald-600 rounded-full shadow-lg flex items-center justify-center text-2xl hover:scale-110 transition-transform"
+          className="bg-[url('samplelogo.png')] bg-center bg-cover w-14 h-14 bg-white-600 rounded-full shadow-lg flex items-center justify-center text-2xl hover:scale-110 transition-transform"
         >
-          ✨
         </button>
       )}
     </div>

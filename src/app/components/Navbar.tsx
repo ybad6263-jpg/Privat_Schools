@@ -5,13 +5,13 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Logic: Menu starts closed
 
   return (
-    <nav className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-      <div className="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
-        
+    
+    <nav className="fixed w-full top-0 z-50 bg-sky/80 backdrop-blur-md border-b border-sky-100 p-5">
+      <div className="max-w-6xl mx-auto h-20 flex justify-around items-center">
         {/* Logo */}
         <div className="flex items-center gap-3 font-bold text-xl text-sky-900">
-          <div className="w-10 h-10 bg-sky-600 rounded-xl flex items-center justify-center text-white">HT</div>
-          <span className="txet-xl">Hteik Tan <br /> Private High School</span>
+          <div className="bg-[url('samplelogo.png')] w-45 h-45 bg-cover rounded-xl flex items-center justify-center text-white"></div>
+          {/*  */}
         </div>
 
         {/* Desktop Links (Hidden on Mobile) */}
@@ -44,7 +44,8 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-white border-b border-slate-100 px-6 py-8 animate-in fade-in slide-in-from-top-4">
           <ul className="flex flex-col gap-6 text-slate-600 font-semibold text-lg">
-            <li><a href="#announcements" onClick={() => setIsOpen(false)}>News</a></li>
+          <li><a href="#home" className="hover:text-sky-600 transition-colors">Home</a></li>
+            <li><a href="#announcements" onClick={() => setIsOpen(false)}>Announcements</a></li>
             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>

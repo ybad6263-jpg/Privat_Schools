@@ -1,7 +1,7 @@
 export default function hero(){
 
     return(
-         <div id="home" className="max-w-6xl mt-[35px] mx-auto px-6 py-24 text-center ">
+         <div id="home" className="max-w-6xl mt-[45px] mx-auto px-6 py-24 text-center bg-sky-100 rounded-full">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900">
           Empowering Students for a <br />
           <span className="text-sky-600 font-black">Brighter Future</span>
@@ -14,10 +14,11 @@ export default function hero(){
         
         <div className="mt-12 flex flex-wrap gap-4 justify-center">
           <button className="bg-sky-600 text-white px-10 py-4 rounded-full font-bold shadow-lg shadow-sky-200 hover:bg-sky  -700 transition-all transform hover:-translate-y-1">
-            Enroll for 2026
+           <a href="#contact"> Enroll for 2026</a>
           </button>
           <button className="border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-full font-bold hover:bg-slate-50 transition-all">
-            View Curriculum
+            
+            <a href="#programs">View Curriculum</a>
           </button>
         </div>
       </div>

@@ -12,14 +12,17 @@ import Footer from "./components/footer";
 import Campus from "./components/campus";
 import Programs from "./components/programs";
 import AIChat from "./components/AIChat";
+import Navbar from "./components/Navbar";
 
 
 export default function Home() {
+
   // --- STORY 1: THE LOGIC ---
  
   // --- STORY 2: THE UI ---
   return (
     <main className="bg-white">
+      <Navbar />
 <Hero/>
 <Programs />
 <Campus />

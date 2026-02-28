@@ -30,7 +30,7 @@ export default function anno() {
         <h2 className="text-3xl font-bold mb-10">Latest Announcements</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {news.map((item: any) => (
-            <div key={item.id} className="p-6 border rounded-2xl border-slate-100 shadow-sm">
+            <div key={item.id} className="bg-[url('samplelogo.png')] bg-cover bg-[190px_-100px] bg-no-repeat shadow-sky-900 p-6 border rounded-2xl border-slate-100 shadow-sm">
               <span className="text-xs font-bold text-emerald-600 uppercase">{item.category}</span>
               <h3 className="text-xl font-bold mt-2">{item.title}</h3>
               <p className="text-slate-500 mt-2">{item.content}</p>

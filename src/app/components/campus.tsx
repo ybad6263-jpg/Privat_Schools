@@ -20,7 +20,7 @@ export default function Campus() {
             </ul>
           </div>
           <div className="relative group">
-            <div className="aspect-video bg-slate-800 rounded-3xl border-4 border-slate-700 overflow-hidden relative">
+            <div className="aspect-video bg-[url('samplelogo.png')] bg-cover bg-center bg-sky-200 rounded-3xl border-4 border-slate-700 overflow-hidden relative">
                {/* Replace with a real school building image later */}
                <div className="absolute inset-0 flex items-center justify-center text-slate-500 italic">
                  [High-Res Campus Photo]
