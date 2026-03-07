@@ -12,11 +12,11 @@ export default function Voc() {
         { name: "Dr. Robert M.", role: "Parent", text: "We love the small class sizes. The personalized attention our son receives is unmatched." },
         { name: "James L.", role: "Grade 12 Student", text: "Elite Academy isn't just a school; it's a place where my ideas are actually heard." }
       ].map((testimonial, i) => (
-        <div key={i} className="bg-sky-200 bg-[url('samplelogo.png')] p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
+        <div key={i} className="bg-white-200 bg-[url('samplelogo.png')] p-4 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-all">
           <div className="text-sky-900 text-4xl mb-4 font-serif">“</div>
           <p className="text-sky-900 mb-6 italic leading-relaxed">{testimonial.text}</p>
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-slate-200 rounded-full"></div> {/* Avatar Placeholder */}
+            <div className="w-10 h-10 bg-slate-200 rounded-full bg-[url('samplelogo.png')] bg-cover "></div> {/* Avatar Placeholder */}
             <div>
               <p className="font-bold text-slate-900 text-sm">{testimonial.name}</p>
               <p className="text-slate-400 text-xs uppercase tracking-tighter">{testimonial.role}</p>

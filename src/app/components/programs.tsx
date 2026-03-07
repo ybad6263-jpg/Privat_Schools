@@ -15,7 +15,7 @@ export default function Programs() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((p, i) => (
-            <div key={i} id="programs" className="group p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-emerald-600 transition-all duration-300">
+            <div key={i} id="programs" className="group p-8 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-sky-600 transition-all duration-300">
               <div className="text-4xl mb-4">{p.icon}</div>
               <h3 className="text-xl font-bold text-slate-900 group-hover:text-white mb-3">{p.title}</h3>
               <p className="text-slate-600 group-hover:text-emerald-50 text-sm leading-relaxed">{p.desc}</p>
