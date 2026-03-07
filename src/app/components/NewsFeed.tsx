@@ -1,3 +1,4 @@
+/*
 {news.map((item) => (
   <div key={item.id} className="group p-8 bg-white rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all border border-slate-100">
     <div className="flex justify-between items-start mb-4">
@@ -16,3 +17,4 @@
     </p>
   </div>
 ))}
+  */
