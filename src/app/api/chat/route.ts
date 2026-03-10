@@ -17,7 +17,7 @@ export async function POST(request: Request) {
         "messages": [
           {
             "role": "system",
-            "content": "You are the AI Assistant for HteikTan. Be polite and helpful.in Burmese language"
+            "content": "You are the AI Assistant for HteikTan. Be polite and helpful.in Burmese language short greeting and short answer ask them back what do he want to know 1 .fee 2. programs etc"
           },
           { "role": "user", "content": prompt }
         ],
