@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Logic: Menu starts closed
+  const [lang, setLang] = useState("en"); // Default to English
 
   return (
     
@@ -20,7 +21,19 @@ export default function Navbar() {
           <li><a href="#announcements" className="hover:text-sky-600 transition-colors">Announcements</a></li>
           <li><a href="#about" className="hover:text-sky-600 transition-colors">About</a></li>
           <li><a href="#contact" className="hover:text-sky-600 transition-colors">Contact</a></li>
+
         </ul>
+        <div className="flex items-center gap-6">
+        {/* Language Toggle Button */}
+        <button 
+          onClick={() => setLang(lang === "en" ? "mm" : "en")}
+          className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:bg-slate-50 transition-all text-sm font-medium"
+        >
+          <span className={lang === "en" ? "text-sky-600 font-bold" : "text-slate-400"}>EN</span>
+          <span className="text-slate-300">|</span>
+          <span className={lang === "mm" ? "text-sky-600 font-bold" : "text-slate-400"}>မြန်မာ</span>
+        </button>
+      </div>
 
         {/* Mobile Menu Button (Hidden on Desktop) */}
         <button 
@@ -49,8 +62,12 @@ export default function Navbar() {
             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>
+          
         </div>
+        
       )}
+
+      
     </nav>
   );
 }

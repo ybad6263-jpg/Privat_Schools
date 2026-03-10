@@ -10,14 +10,14 @@ export async function POST(request: Request) {
         "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`,
         "Content-Type": "application/json",
         "HTTP-Referer": "http://localhost:3000", // Required by OpenRouter
-        "X-Title": "Elite Academy School Site",  // Required by OpenRouter
+        "X-Title": "HteikTan School Site",  // Required by OpenRouter
       },
       body: JSON.stringify({
         "model": "stepfun/step-3.5-flash:free", // Using a high-quality FREE model
         "messages": [
           {
             "role": "system",
-            "content": "You are the AI Assistant for Elite Academy. Be polite and helpful."
+            "content": "You are the AI Assistant for HteikTan. Be polite and helpful.in Burmese language"
           },
           { "role": "user", "content": prompt }
         ],

@@ -1,29 +1,52 @@
 // src/components/BentoGrid.tsx
 export default function BentoGrid() {
   return (
-   <section className="py-24 bg-sky px-6">
-  <div className="max-w-6xl mx-auto">
-    <div className="mb-12">
-      <h2 className="text-3xl font-bold text-slate-900 font-tech">Life at Elite Academy</h2>
-      <p className="text-slate-500">A glimpse into our daily innovation and learning.</p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-7xl mx-auto">
+  
+  {/* Card 1: Library */}
+  <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+    <div className="aspect-[4/5] overflow-hidden">
+      <img src="/library.jpg" alt="Library" className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" />
     </div>
-
-    {/* The Grid */}
-    <div className="grid grid-cols-2 md:grid-cols-4 grid-rows-2 gap-4 h-[500px]">
-      <div className="col-span-2 row-span-2 bg-slate-100 rounded-3xl flex items-center justify-center border border-slate-200 overflow-hidden bg-[url('samplelogo.png')] bg-cover">
-        <span className="text-slate-400 ">Main Lab Image</span>
-      </div>
-      <div className="col-span-1 row-span-1 bg-sky-50 rounded-3xl flex items-center justify-center border border-sky-100 overflow-hidden bg-[url('samplelogo.png')] bg-cover">
-        <span className="text-sky-400">Library</span>
-      </div>
-      <div className="col-span-1 row-span-1 bg-slate-100 rounded-3xl flex items-center justify-center border border-slate-200 overflow-hidden  ">
-        <span className="text-slate-400">Sports</span>
-      </div>
-      <div className="col-span-2 row-span-1 bg-slate-900 rounded-3xl flex items-center justify-center  overflow-hidden">
-        <span className="text-slate-300">Innovation Center</span>
-      </div>
+    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white/90 to-transparent">
+      <p className="text-emerald-600 text-[10px] font-bold uppercase tracking-widest mb-1">Academic</p>
+      <h3 className="font-bold text-slate-900">Digital Library</h3>
     </div>
   </div>
-</section>
+
+  {/* Card 2: Science Lab */}
+  <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+    <div className="aspect-[4/5] overflow-hidden">
+      <img src="/lab.jpg" alt="Science Lab" className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white/90 to-transparent">
+      <p className="text-emerald-600 text-[10px] font-bold uppercase tracking-widest mb-1">Innovation</p>
+      <h3 className="font-bold text-slate-900">Smart Laboratory</h3>
+    </div>
+  </div>
+
+  {/* Card 3: Sports/Playground */}
+  <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+    <div className="aspect-[4/5] overflow-hidden">
+      <img src="/sports.jpg" alt="Sports" className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white/90 to-transparent">
+      <p className="text-emerald-600 text-[10px] font-bold uppercase tracking-widest mb-1">Activity</p>
+      <h3 className="font-bold text-slate-900">Modern Sports Complex</h3>
+    </div>
+  </div>
+
+  {/* Card 4: Classroom */}
+  <div className="group relative overflow-hidden rounded-[2.5rem] bg-white border border-slate-100 shadow-sm transition-all hover:shadow-xl hover:-translate-y-1">
+    <div className="aspect-[4/5] overflow-hidden">
+      <img src="/classroom.jpg" alt="Classroom" className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" />
+    </div>
+    <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-white via-white/90 to-transparent">
+      <p className="text-emerald-600 text-[10px] font-bold uppercase tracking-widest mb-1">Environment</p>
+      <h3 className="font-bold text-slate-900">Creative Classrooms</h3>
+    </div>
+  </div>
+
+</div>
   );
 }
