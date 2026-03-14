@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
 
+
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Logic: Menu starts closed
   const [lang, setLang] = useState("en"); // Default to English
@@ -24,7 +26,7 @@ export default function Navbar() {
 
         </ul>
         <div className="flex items-center gap-6">
-        {/* Language Toggle Button */}
+        {/* Language Toggle Button 
         <button 
           onClick={() => setLang(lang === "en" ? "mm" : "en")}
           className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-slate-200 hover:bg-slate-50 transition-all text-sm font-medium"
@@ -33,6 +35,7 @@ export default function Navbar() {
           <span className="text-slate-300">|</span>
           <span className={lang === "mm" ? "text-sky-600 font-bold" : "text-slate-400"}>မြန်မာ</span>
         </button>
+        */}
       </div>
 
         {/* Mobile Menu Button (Hidden on Desktop) */}

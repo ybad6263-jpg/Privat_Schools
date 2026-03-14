@@ -1,4 +1,6 @@
-
+"use client";
+import { useState } from "react";
+import { content } from "../constants/translation";
 import Hero from "./components/hero";
 import Announcements from "./components/anno";
 import Why from "./components/Whyus";
@@ -15,8 +17,13 @@ import AIChat from "./components/AIChat";
 import Navbar from "./components/Navbar";
 
 
+
+
 export default function Home() {
 
+  
+const [lang, setLang] = useState<"en" | "mm">("en");
+  const t = content[lang]; // The translation "brain"
   // --- STORY 1: THE LOGIC ---
  
   // --- STORY 2: THE UI ---
